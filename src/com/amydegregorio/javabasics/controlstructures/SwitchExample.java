@@ -53,6 +53,26 @@ public class SwitchExample {
       }
       
       System.out.println(caffeinationLevel);
+      
+      //Switch statement with fall through
+      int cupsCoffee = 1;
+      
+      switch(Math.abs(cupsCoffee)) {
+         case 0:
+            cupsCoffee++;
+         case 1:
+            cupsCoffee++;
+         case 2:
+            cupsCoffee++;
+         case 3:
+            cupsCoffee++;
+         case 4:
+            cupsCoffee++;
+         case 5:
+            cupsCoffee++;
+      }
+      
+      System.out.println("Cups of coffee consumed: " + cupsCoffee);
 
       //Switch statement with a string
       String currentCondition = "raining";
